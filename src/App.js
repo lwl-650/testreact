@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Text from "./page/test.jsx";
 import { React, useState, useEffect } from "react";
+  
+import RouterIndex from "./router/index.jsx"
 
 import intl from "react-intl-universal";
 require("intl/locale-data/jsonp/en.js");
@@ -33,10 +35,11 @@ function App() {
     initDone && (
       <div className="App">
         <header className="App-header">
-          <h1>这是父组件</h1>
-          {intl.get("title")}
+          {/* <h1>这是父组件</h1> */}
+          {/* {intl.get("title")} */}
           <h1>
-            <Text></Text>
+            {/* <Text></Text> */}
+             <RouterIndex></RouterIndex>
           </h1>
         </header>
       </div>
